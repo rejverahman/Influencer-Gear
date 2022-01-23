@@ -16,7 +16,6 @@ p{
 button{
     background-color: #E02C6D;
     padding: 13px 20px;
-    margin-top:10px;
     border: none;
     border-radius: 5px;
 }
@@ -132,16 +131,32 @@ hr{
 }
 
 .blograting p{
-    margin: 0px 0px 4px 10px!important;
+    margin: 0px 0px 0px 10px!important;
 }
 
 .seemore{
     text-decoration: none;
     font-size: 18px;
     color: red;
-    float:right;
     padding: 10px 80px;
     margin-bottom: 20px;
+}
+
+/* Featured Section Style */
+
+.featured-iteam{
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    justify-items: center;
+    align-items: center;
+    padding: 80px 80px;
+}
+.featured-information{
+    padding-left: 25px;
+}
+.featured-information h2{
+    font-size: 35px;
+    margin: 0px;
 }
 
 /* Footer Style */
@@ -152,7 +167,7 @@ footer{
     color: white;
     text-align: center;
 }
-footer h3, p{
+footer h3{
     margin: 0px;
 }
 footer .fab{
@@ -193,6 +208,10 @@ footer .fab{
         display: none;
     }
     .blogs{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px;
+    }
+    .featured-iteam{
         grid-template-columns: repeat(1,1fr);
         padding: 0px;
     }
